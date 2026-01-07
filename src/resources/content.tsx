@@ -1,304 +1,230 @@
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
-import { Line, Row, Text } from "@once-ui-system/core";
+
+/* =======================
+   PERSON
+======================= */
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Bhumika",
+  lastName: "Gohiya",
+  name: "Bhumika Gohiya",
+  role: "QA Automation Engineer",
+  avatar: "/images/bhumika.jpg",
+  email: "bhumikagohiya96@gmail.com",
+  location: "Ottawa, Canada",
+  languages: ["English"],
 };
+
+/* =======================
+   NEWSLETTER (DISABLED)
+======================= */
 
 const newsletter: Newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  display: false,
+  title: <>Newsletter</>,
+  description: <>Newsletter</>,
 };
 
+/* =======================
+   SOCIAL LINKS
+======================= */
+
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/BhumikaGohiya",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/bhumika-gohiya",
     essential: true,
   },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: "mailto:bhumikagohiya96@gmail.com",
     essential: true,
   },
 ];
+
+/* =======================
+   HOME
+======================= */
 
 const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  title: "Bhumika Gohiya | QA Automation Engineer",
+  description:
+    "QA Automation Engineer with enterprise experience in web, API, and CI/CD testing.",
+  headline: <>Bhumika Gohiya</>,
   featured: {
-    display: true,
-    title: (
-      <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
-      </Row>
-    ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    display: false,
+    title: <></>,
+    href: "",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      Senior QA Automation professional with 4+ years of experience delivering
+      reliable, scalable test solutions for enterprise applications in Agile environments.
+    </>
   ),
 };
+
+/* =======================
+   ABOUT
+======================= */
 
 const about: About = {
   path: "/about",
   label: "About",
-  title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  title: "About – Bhumika Gohiya",
+  description: "QA Automation Engineer based in Ottawa, Canada",
   tableOfContent: {
-    display: true,
+    display: false,
     subItems: false,
   },
   avatar: {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "",
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Professional Summary",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        QA Automation Engineer with over 4 years of experience working on
+        large-scale enterprise and BFSI applications. Strong background in UI
+        and API automation, CI/CD integration, mobile testing, and end-to-end
+        quality assurance.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Accenture",
+        timeframe: "Nov 2021 – Feb 2023",
+        role: "Senior Analyst – Test Automation Engineering",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Achieved 85% automation coverage by automating and maintaining 500+ test cases.</>,
+          <>Led a QA team of 4–5 members, improving productivity by 30%.</>,
+          <>Improved backend reliability through API automation and regression testing.</>,
+          <>Reduced defect leakage by 20% through optimized test planning.</>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Accenture",
+        timeframe: "Jul 2020 – Nov 2021",
+        role: "Analyst – Test Engineering",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Reduced manual testing effort by 40% via automation.</>,
+          <>Integrated automated test suites into CI/CD pipelines.</>,
+          <>Collaborated with Agile teams to improve delivery quality.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Accenture",
+        timeframe: "Aug 2018 – Jul 2020",
+        role: "Analyst – Test Associate",
+        achievements: [
+          <>Designed and executed 300+ BDD test scripts.</>,
+          <>Maintained a 98% defect closure rate.</>,
+          <>Ensured defect-free releases through smoke and sanity testing.</>,
         ],
         images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Carleton University, Ottawa, Canada",
+        description: <>Master of Engineering – Technology Innovation Management</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Madhav Institute of Technology & Science, India",
+        description: <>Bachelor of Engineering</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Programming & Automation",
+        description: <>Java, Python, SQL, Selenium, Playwright, TestNG, Rest Assured</>,
+        tags: [],
+        images: [],
       },
       {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "API & Performance Testing",
+        description: <>REST APIs, Postman, SoapUI, SIT, Load Testing</>,
+        tags: [],
+        images: [],
+      },
+      {
+        title: "CI/CD & DevOps",
+        description: <>Maven, Jenkins, GitHub Actions, Azure DevOps</>,
+        tags: [],
+        images: [],
+      },
+      {
+        title: "Tools & Methodologies",
+        description: <>Git, GitHub, Bitbucket, JIRA, Confluence, Agile/Scrum, SDLC, STLC</>,
+        tags: [],
+        images: [],
       },
     ],
   },
 };
 
+/* =======================
+   BLOG
+======================= */
+
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Blog",
+  description: "Thoughts on QA, automation, and quality engineering",
 };
+
+/* =======================
+   WORK
+======================= */
 
 const work: Work = {
   path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  label: "Projects",
+  title: "Projects – Bhumika Gohiya",
+  description: "QA automation and testing projects",
 };
+
+/* =======================
+   GALLERY (DISABLED)
+======================= */
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+  title: "",
+  description: "",
+  images: [],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
