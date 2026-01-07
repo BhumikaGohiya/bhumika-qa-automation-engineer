@@ -48,6 +48,12 @@ const social: Social = [
     link: "mailto:bhumikagohiya96@gmail.com",
     essential: true,
   },
+  {
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.instagram.com/bhumika_gohiya/",
+    essential: true,
+  },
 ];
 
 /* =======================
@@ -194,14 +200,14 @@ const about: About = {
 };
 
 /* =======================
-   BLOG
+   BLOG (NEUTRALIZED)
 ======================= */
 
 const blog: Blog = {
   path: "/blog",
-  label: "Blog",
-  title: "Blog",
-  description: "Thoughts on QA, automation, and quality engineering",
+  label: "",
+  title: "",
+  description: "",
 };
 
 /* =======================
@@ -216,12 +222,12 @@ const work: Work = {
 };
 
 /* =======================
-   GALLERY (DISABLED)
+   GALLERY (NEUTRALIZED)
 ======================= */
 
 const gallery: Gallery = {
   path: "/gallery",
-  label: "Gallery",
+  label: "",
   title: "",
   description: "",
   images: [],
