@@ -9,9 +9,9 @@ const person: Person = {
   lastName: "Gohiya",
   name: "Bhumika Gohiya",
   role: "QA Automation Engineer",
-  avatar: "/images/bhumika.jpg",
+  avatar: "/images/bhumika.jpeg",
   email: "bhumikagohiya96@gmail.com",
-  location: "Ottawa, Canada",
+  location: "America/Toronto",
   languages: ["English"],
 };
 
