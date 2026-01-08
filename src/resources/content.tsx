@@ -1,9 +1,8 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import { About, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 
 /* =======================
    PERSON
 ======================= */
-
 const person: Person = {
   firstName: "Bhumika",
   lastName: "Gohiya",
@@ -18,7 +17,6 @@ const person: Person = {
 /* =======================
    NEWSLETTER (DISABLED)
 ======================= */
-
 const newsletter: Newsletter = {
   display: false,
   title: <>Newsletter</>,
@@ -28,7 +26,6 @@ const newsletter: Newsletter = {
 /* =======================
    SOCIAL LINKS
 ======================= */
-
 const social: Social = [
   {
     name: "GitHub",
@@ -59,7 +56,6 @@ const social: Social = [
 /* =======================
    HOME
 ======================= */
-
 const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
@@ -84,7 +80,6 @@ const home: Home = {
 /* =======================
    ABOUT
 ======================= */
-
 const about: About = {
   path: "/about",
   label: "About",
@@ -103,13 +98,18 @@ const about: About = {
   },
   intro: {
     display: true,
-    title: "Professional Summary",
+    title: "A Bit About Me",
     description: (
       <>
-        QA Automation Engineer with over 4 years of experience working on
-        large-scale enterprise and BFSI applications. Strong background in UI
-        and API automation, CI/CD integration, mobile testing, and end-to-end
-        quality assurance.
+        I'm a <strong>Senior QA Automation Engineer</strong> who transforms complex testing challenges
+        into streamlined, scalable automation. With 4+ years of experience across enterprise-grade web,
+        API, and mobile platforms, I specialize in building efficient QA pipelines that drive speed,
+        reliability, and visibility.
+        <br /><br />
+        Whether it's integrating Selenium test suites into CI/CD, improving API reliability with Rest Assured,
+        or mentoring junior testers — I bring a mindset of quality, ownership, and continuous improvement.
+        I'm also passionate about analytics, building dashboards and validation frameworks to surface insights
+        that matter.
       </>
     ),
   },
@@ -200,31 +200,56 @@ const about: About = {
 };
 
 /* =======================
-   BLOG (NEUTRALIZED)
-======================= */
-
-const blog: Blog = {
-  path: "/blog",
-  label: "",
-  title: "",
-  description: "",
-};
-
-/* =======================
    WORK
 ======================= */
-
 const work: Work = {
   path: "/work",
   label: "Projects",
   title: "Projects – Bhumika Gohiya",
   description: "QA automation and testing projects",
+  projects: [
+    {
+      name: "Data Validation Framework",
+      description: "Python-based engine that validates data integrity across ETL pipelines with QA alerts.",
+      stack: ["Python", "Pandas", "Power BI"],
+      link: "#",
+    },
+    {
+      name: "API Test Automation",
+      description: "Rest Assured-based automation suite integrated with Jenkins CI/CD for nightly runs.",
+      stack: ["Java", "Rest Assured", "Jenkins"],
+      link: "#",
+    },
+    {
+      name: "Mobile App QA Automation",
+      description: "Cross-platform automation with Appium for Android/iOS, reducing regression time by 40%.",
+      stack: ["Appium", "TestNG", "Java"],
+      link: "#",
+    },
+  ],
 };
+
+/* =======================
+   CERTIFICATIONS
+======================= */
+const certifications = [
+  {
+    title: "Microsoft Certified: Azure Fundamentals",
+    date: "2020",
+  },
+  {
+    title: "Lean Six Sigma White Belt",
+    date: "2020",
+  },
+  {
+    title: "Academy Accreditation: Generative AI Fundamentals",
+    date: "2023",
+  },
+];
 
 /* =======================
    GALLERY (NEUTRALIZED)
 ======================= */
-
 const gallery: Gallery = {
   path: "/gallery",
   label: "",
@@ -233,4 +258,4 @@ const gallery: Gallery = {
   images: [],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, work, gallery, certifications };
