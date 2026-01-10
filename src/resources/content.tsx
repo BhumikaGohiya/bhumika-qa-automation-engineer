@@ -1,4 +1,4 @@
-import { About, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import { About, Home, Newsletter, Person, Social, Work } from "@/types";
 
 /* =======================
    PERSON
@@ -72,7 +72,7 @@ const home: Home = {
   subline: (
     <>
       Senior QA Automation professional with 4+ years of experience delivering
-      reliable, scalable test solutions for enterprise applications in Agile environments.
+      scalable test solutions across enterprise-grade applications. Focused on automation, CI/CD, and continuous quality.
     </>
   ),
 };
@@ -84,7 +84,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: "About – Bhumika Gohiya",
-  description: "QA Automation Engineer based in Ottawa, Canada",
+  description: "QA Automation Engineer based in Toronto, Canada",
   tableOfContent: {
     display: false,
     subItems: false,
@@ -101,15 +101,15 @@ const about: About = {
     title: "A Bit About Me",
     description: (
       <>
-        I'm a <strong>Senior QA Automation Engineer</strong> who transforms complex testing challenges
-        into streamlined, scalable automation. With 4+ years of experience across enterprise-grade web,
-        API, and mobile platforms, I specialize in building efficient QA pipelines that drive speed,
-        reliability, and visibility.
+        I'm a <strong>QA Automation Engineer</strong> passionate about quality-first engineering.
+        With 4+ years of experience testing enterprise apps, APIs, and cloud pipelines,
+        I specialize in automation frameworks, continuous testing, and integrating
+        QA seamlessly into Agile teams.
         <br /><br />
-        Whether it's integrating Selenium test suites into CI/CD, improving API reliability with Rest Assured,
-        or mentoring junior testers — I bring a mindset of quality, ownership, and continuous improvement.
-        I'm also passionate about analytics, building dashboards and validation frameworks to surface insights
-        that matter.
+        I enjoy building test architecture from scratch, reducing manual effort,
+        and ensuring clean, stable releases. My work includes testing Salesforce, mobile apps,
+        and backend services using tools like Selenium, Rest Assured, Jenkins, and Postman.
+        I'm currently open to SDET, QA Lead, or DevOps-focused test roles in Canada.
       </>
     ),
   },
@@ -122,10 +122,9 @@ const about: About = {
         timeframe: "Nov 2021 – Feb 2023",
         role: "Senior Analyst – Test Automation Engineering",
         achievements: [
-          <>Achieved 85% automation coverage by automating and maintaining 500+ test cases.</>,
-          <>Led a QA team of 4–5 members, improving productivity by 30%.</>,
-          <>Improved backend reliability through API automation and regression testing.</>,
-          <>Reduced defect leakage by 20% through optimized test planning.</>,
+          <>Achieved 85% automation coverage across 500+ test cases.</>,
+          <>Led a QA team to optimize release quality, reducing defect leakage by 20%.</>,
+          <>Improved backend reliability via API automation and CI integration.</>,
         ],
         images: [],
       },
@@ -134,9 +133,9 @@ const about: About = {
         timeframe: "Jul 2020 – Nov 2021",
         role: "Analyst – Test Engineering",
         achievements: [
-          <>Reduced manual testing effort by 40% via automation.</>,
-          <>Integrated automated test suites into CI/CD pipelines.</>,
-          <>Collaborated with Agile teams to improve delivery quality.</>,
+          <>Reduced manual testing by 40% through Selenium and mobile automation.</>,
+          <>Integrated automated test suites into Jenkins CI/CD pipelines.</>,
+          <>Collaborated closely with developers to stabilize in-sprint delivery.</>,
         ],
         images: [],
       },
@@ -145,9 +144,9 @@ const about: About = {
         timeframe: "Aug 2018 – Jul 2020",
         role: "Analyst – Test Associate",
         achievements: [
-          <>Designed and executed 300+ BDD test scripts.</>,
+          <>Developed and executed 300+ BDD test scripts using Java and Cucumber.</>,
           <>Maintained a 98% defect closure rate.</>,
-          <>Ensured defect-free releases through smoke and sanity testing.</>,
+          <>Supported successful UAT cycles with daily smoke/sanity validations.</>,
         ],
         images: [],
       },
@@ -163,7 +162,7 @@ const about: About = {
       },
       {
         name: "Madhav Institute of Technology & Science, India",
-        description: <>Bachelor of Engineering</>,
+        description: <>Bachelor of Engineering – Electronics</>,
       },
     ],
   },
@@ -172,26 +171,26 @@ const about: About = {
     title: "Technical Skills",
     skills: [
       {
-        title: "Programming & Automation",
+        title: "Languages & Automation",
         description: <>Java, Python, SQL, Selenium, Playwright, TestNG, Rest Assured</>,
         tags: [],
         images: [],
       },
       {
-        title: "API & Performance Testing",
-        description: <>REST APIs, Postman, SoapUI, SIT, Load Testing</>,
+        title: "API & Backend Testing",
+        description: <>REST APIs, Postman, SoapUI, SIT, Regression, Load Testing</>,
         tags: [],
         images: [],
       },
       {
         title: "CI/CD & DevOps",
-        description: <>Maven, Jenkins, GitHub Actions, Azure DevOps</>,
+        description: <>Maven, Jenkins, GitHub Actions, Azure DevOps, Bitbucket</>,
         tags: [],
         images: [],
       },
       {
-        title: "Tools & Methodologies",
-        description: <>Git, GitHub, Bitbucket, JIRA, Confluence, Agile/Scrum, SDLC, STLC</>,
+        title: "Project Tools & Methods",
+        description: <>JIRA, Confluence, Agile/Scrum, SDLC, STLC, BDD, Gherkin</>,
         tags: [],
         images: [],
       },
@@ -200,30 +199,33 @@ const about: About = {
 };
 
 /* =======================
-   WORK
+   WORK – Projects
 ======================= */
 const work: Work = {
   path: "/work",
   label: "Projects",
   title: "Projects – Bhumika Gohiya",
-  description: "QA automation and testing projects",
+  description: "Selected QA and automation projects.",
   projects: [
     {
       name: "Data Validation Framework",
-      description: "Python-based engine that validates data integrity across ETL pipelines with QA alerts.",
+      description:
+        "Python-based engine that validates data integrity across ETL pipelines, sending QA alerts to prevent data issues early.",
       stack: ["Python", "Pandas", "Power BI"],
       link: "#",
     },
     {
-      name: "API Test Automation",
-      description: "Rest Assured-based automation suite integrated with Jenkins CI/CD for nightly runs.",
+      name: "API Automation Suite",
+      description:
+        "Test suite for REST APIs using Rest Assured and Jenkins CI/CD. Supports nightly and on-demand regression runs.",
       stack: ["Java", "Rest Assured", "Jenkins"],
       link: "#",
     },
     {
-      name: "Mobile App QA Automation",
-      description: "Cross-platform automation with Appium for Android/iOS, reducing regression time by 40%.",
-      stack: ["Appium", "TestNG", "Java"],
+      name: "Mobile App Testing (Android/iOS)",
+      description:
+        "Cross-platform automation with Appium. Reduced release cycle by 40% with consistent functional validations.",
+      stack: ["Appium", "Java", "TestNG"],
       link: "#",
     },
   ],
@@ -247,15 +249,4 @@ const certifications = [
   },
 ];
 
-/* =======================
-   GALLERY (NEUTRALIZED)
-======================= */
-const gallery: Gallery = {
-  path: "/gallery",
-  label: "",
-  title: "",
-  description: "",
-  images: [],
-};
-
-export { person, social, newsletter, home, about, work, gallery, certifications };
+export { person, social, newsletter, home, about, work, certifications };
